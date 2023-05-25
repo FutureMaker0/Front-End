@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <h1>변수의 타입</h1>
+    <script>
+        // python : int, float, str, bool, list, tuple, dict, set
+        // javascript: number(int, float), string(str), boolean
+        // array(list), object(dict), set(set), map(dict)
+
+        // 에러를 최소화하는 쪽으로 설계가 되어 있다.
+        // 에러를 내줘야 하는 상황에서도 에러를 내주지 않는다?
+        console.log(typeof(10));
+        console.log(typeof(10.1));
+        console.log(typeof('hello'));
+        console.log(typeof(true));
+        console.log(typeof([1, 2, 3]));
+
+        // javascript가 어려운 이유
+        console.log(typeof({'one':1, 'two':2}));
+        console.log(typeof(new Set('hello')));
+        console.log(typeof(new Map()));
+        console.log(typeof(function(){}));
+
+        console.log(typeof(/정규표현식/g));
+
+        console.log(10 + '10'); // 1010
+        console.log('10'+ 10); // +에서 형태가 다를 경우 문자열로 형변환?
+        console.log('10' + true); // 1010
+        
+        // 자바스크립트는 예외가 너무 많다.
+        // 어떤 규칙을 만들어 이럴거야라는 식으로 외우게 되면 피본다.
+
+        // 형변환
+        console.log(Number('10'));
+        console.log(Boolean('10'));
+        console.log(String(10)); //toString이 있으면 그걸 써라.
+
+        console.log(parseInt(10.1))
+        console.log(parseInt('10'))
+        console.log(~~10.1) // 정수만 추출한다. 비트연산자
+        // 알고리즘 풀이에서는 필요하지만, 실무에서는 닌자코드 같아서 비추천
+
+        
+
+
+
+    </script>
+</body>
+</html>

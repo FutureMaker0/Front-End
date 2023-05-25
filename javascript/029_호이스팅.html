@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <script>
+        console.log(add1(10, 20)); // 30
+        console.log(add2(10, 20)); // 30
+        console.log(mul1) // undefined
+        // console.log(mul1(10, 20)); // not a function
+        // console.log(mul2); // Cannot access 'mul2' before initialization
+        // console.log(mul2(10, 20)); // 위와 같은 애러
+        // console.log(mul3) // mul3 is not defined, 호이스팅이 안되었기 때문
+
+        function add1(x, y) {
+            return x + y;
+        }
+
+        function add2(x, y) {
+            return x + y;
+        }
+
+        var mul1 = function (a, b) {
+            return a * b;
+        }
+
+        let mul2 = function (a, b) {
+            return a * b;
+        }
+    </script>
+</body>
+</html>

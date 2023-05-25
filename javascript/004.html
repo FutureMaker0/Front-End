@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <script>
+        console.log('hello world');
+        const x = 'hello'
+        // 변수 선언의 방법은 3가지가 있다 자바 스크립트에서.
+        // 대부분 const로 선언한다.
+        // var는 지금 시대에 적절치 않은 변수선언이다.
+        // var x: 전역변수 x를 선언(함수 스코프)
+        // let x: 변경이 가능한 변수, 블록스코프를 갖는 x 선언
+        // const: 변경이 불가능한 변수, 블록스코프를 갖는 x 선언
+
+
+        console.dir(x) // print(dif(x))와 같다.
+
+        const y = {
+            'one': 1,
+            'two': 2,
+            'three':3
+        }
+        console.table(y)
+
+        console.group('one')
+        console.log('호준/팀원')
+        console.log('정효/팀원')
+        console.log('성철/팀원')
+        console.group('two')
+        console.log('이도/팀원')
+        console.log('기현/팀원')
+        console.log('슬기/팀원')
+        console.groupEnd
+        console.log('end')
+        console.groupEnd
+        console.log('end')
+
+        // 아래 것들은 많이 사용하진 않는다.
+        /*
+        console.error
+        console.warn
+        console.info
+        */
+
+        console.log("%c Emergency", "color:red; font-size:26px;")
+
+    </script>
+</body>
+</html>

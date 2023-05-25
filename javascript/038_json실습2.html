@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<style>
+    body {
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    .flex-item {
+        width: 350px;
+
+    }
+
+    .thumbnailImg {
+        width: 300px;
+        border-radius: 10%;
+    }
+
+    .difficulty {
+        width: 15;
+        gap: 10px;
+    }
+
+    .title {
+        width: 15;
+        gap: 10px;
+    }
+    
+
+    .study_status {
+        width: 15;
+        gap: 10px;
+    }
+    
+
+</style>
+
+<body>
+    <!-- 실제로는 통신으로 받아왔다고 가정합니다. -->
+    <script src="data2.js"></script>
+    <script>
+        console.log(data)
+        s = ''
+        for (const i of data) {
+            // console.log(i.thumbnailImg)
+            // console.log(i.difficulty)
+            // console.log(i.title)
+            // console.log(i.study_status)
+            s += `
+            <div class="flex-item">
+                <div class="imgBox">
+                    <img class="thumbnail" src="${i.thumbnailImg}" alt="">
+                </div>
+                <h2 class="difficulty">${i.difficulty}
+                    <div class="priceBox">
+                        <p class="title">${i.title}</p>
+                        <p class="study_status">${i.study_status}</p>
+                    </div>
+                </h2>
+            </div>
+            `
+        }
+        document.querySelector('body').innerHTML = s;
+        // <p class="title">${i.title}</p>
+        // 영인, 진수, 봉수, 현우 참고
+    </script>
+</body>
+</html>
