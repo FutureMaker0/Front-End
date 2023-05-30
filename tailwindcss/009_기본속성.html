@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tailwindcss</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+    <!-- 격자로 나눠지는 건 대부분 flex grid라고 이해하면 된다. -->
+    <h1>1</h1>
+    <div class="grid grid-cols-3 gap-2 border-4 border-red-200">
+        <div class="border-2 border-blue-200">hello</div>
+        <div class="border-2 border-blue-200">hello</div>
+        <div class="border-2 border-blue-200">hello</div>
+        <div class="border-2 border-blue-200">hello</div>
+        <div class="border-2 border-blue-200">hello</div>
+        <div class="border-2 border-blue-200">hello</div>
+    </div>
+
+    <h1>2</h1>
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 border-4 border-red-200">
+        <div class="border-2 border-blue-200">hello</div>
+        <div class="border-2 border-blue-200">hello</div>
+        <div class="border-2 border-blue-200">hello</div>
+        <div class="border-2 border-blue-200">hello</div>
+        <div class="border-2 border-blue-200">hello</div>
+        <div class="border-2 border-blue-200">hello</div>
+    </div>
+
+    <h2>3</h2>
+    <div class="grid grid-cols-4 grid-rows-4 gap-2 border-4 border-red-400">
+        <div class="col-span-2 row-span-2 border-4 border-blue-500">
+            hello 1
+        </div>
+        <div class="col-span-2 border-4 border-blue-500">hello 2</div>
+        <div class="border-4 border-blue-500">hello 3</div>
+        <div class="border-4 border-blue-500">hello 4</div>
+        <div class="border-4 border-blue-500">hello 5</div>
+        <div class="border-4 border-blue-500">hello 6</div>
+    </div>
+
+    <h2>4</h2>
+    <div class="grid grid-cols-4 grid-rows-4 gap-2 border-4 border-red-400">
+        <div
+            class="col-start-1 col-end-3 row-start-1 row-end-3 border-4 border-blue-500"
+        >
+            hello 1
+        </div>
+        <div class="border-4 border-blue-500">hello 2</div>
+        <div class="border-4 border-blue-500">hello 3</div>
+        <div class="border-4 border-blue-500">hello 4</div>
+        <div class="border-4 border-blue-500">hello 5</div>
+        <div class="border-4 border-blue-500">hello 6</div>
+    </div>
+
+
+
+
+</body>
+</html>
+
+
+<!-- 일괄수정 command shift l -->
+<!-- https://flexngrid.com/cheatsheet-flex/ -->
+

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tailwindcss</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- https://tailwindcss.com/docs/margin -->
+    <!-- https://tailwindcss.com/docs/padding -->
+    <!-- https://tailwindcss.com/docs/font-weight -->
+    <!-- https://tailwindcss.com/docs/text-color -->
+
+
+    <br>
+    <h2>1</h2>
+
+    <div class="text-basd">hello world</div>
+    <div class="text-lg">hello world</div>
+    <div class="text-2xl">hello world</div>
+    <div class="text-5xl">hello world</div>
+
+    <div class="border border-gray-950 p-3">hello</div>
+    <div class="border border-gray-950 mt-2">hello</div>
+    <div class="border border-gray-950 mt-2 pl-2">hello</div>
+
+    <!-- p, pt, pr, pb, pl -->
+    <!-- m, mr, ml, mt, mb-->
+
+    <br>
+    <!-- x축, y축, mx, my 등으로 쓸 수 있다. -->
+    <div class="border border-gray-950 p-3 my-2">hello</div>
+    <div class="border border-gray-950 p-3">hello</div>
+    <div class="border border-gray-950 p-3">hello</div>
+
+    <br>
+        <div class="space-y-2">
+        <div class="border border-gray-950 p-3">hello</div>
+        <div class="border border-gray-950 p-3">hello</div>
+        <div class="border border-gray-950 p-3">hello</div>
+    </div>
+
+    <br>
+
+    <div class="p-5">
+        <!-- 아래와 같이 ul태그인데 list-decimal을 사용하지 않도록 한다.-->
+        <ul class="list-decimal">
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, harum. Dignissimos assumenda vitae voluptatum velit, commodi cupiditate nobis aut officia culpa laborum rerum, quam officiis, voluptatem adipisci aspernatur perspiciatis placeat.</li>
+            <li>hello</li>
+            <li>hello</li>
+            <li>hello</li>
+            <li>hello</li>
+            <li>hello</li>
+        </ul>
+    </div>
+
+    <br>
+
+    <div class="w-32 h-32 bg-red-200"></div>
+    <div class="w-32 h-32 bg-red-200 rounded"></div>
+    <div class="w-32 h-32 bg-red-200 rounded-5xl"></div>
+    <div class="w-32 h-32 bg-red-200 rounded-full"></div>
+    
+    <div class="border-l-4">hello world</div>
+    <div class="border-l-4 border-gray-500 pl-2">hello world</div>
+    <div class="border-t-4 border-gray-500">hello world</div>
+    <div class="border-b-4 border-gray-500">hello world</div>
+    <div class="border-r-4 border-gray-500">hello world</div>
+
+    <!-- https://tailwindcss.com/docs/adding-custom-styles#using-arbitrary-values -->
+    <div class="text-[17px]">hello world</div>
+    <div class="mt-[17px]">hello world</div>
+    <div class="bg-[#4267B2] text-white">facebook</div>
+
+
+    <br>
+    <h2>4</h2>
+
+    <div class="flex border-4 border-red-300">
+        <div class="p-2 border-2 border-blue-200">hello</div>
+        <div class="p-2 border-2 border-blue-200">hello</div>
+        <div class="p-2 border-2 border-blue-200">hello</div>
+        <div class="p-2 border-2 border-blue-200">hello</div>
+    </div>
+
+    <div class="flex border-4 border-red-300">
+        <div class="p-2 border-2 border-blue-200 w-1/4">hello</div>
+        <div class="p-2 border-2 border-blue-200 w-3/4">hello</div>
+    </div>
+
+    <div class="flex border-4 border-red-300">
+        <div class="p-2 border-2 border-blue-200 w-1/4">hello</div>
+        <div class="p-2 border-2 border-blue-200 w-3/4">hello</div>
+    </div>
+
+    <div class="flex border-4 border-red-300">
+        <div class="p-2 border-2 border-blue-200 w-1/4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat veniam animi mollitia. Dicta animi beatae, nisi tempore magni quasi quaerat eum earum vitae, dignissimos neque accusantium pariatur, quam vel quis!</div>
+        <div class="p-2 border-2 border-blue-200 w-3/4">hello</div>
+    </div>
+
+    <br>
+    <h2>5</h2>
+    <div class="flex flex-wrap border-4 border-red-300">
+        <div class="p-2 border-2 border-blue-200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt nulla deserunt officia hic et blanditiis atque fugit sit eligendi voluptatem itaque at perspiciatis magni tempora ipsam aliquam ducimus, libero voluptatum.</div>
+        <div class="p-2 border-2 border-blue-200">hello</div>
+        <div class="p-2 border-2 border-blue-200">hello</div>
+        <div class="p-2 border-2 border-blue-200">hello</div>
+    </div>
+
+<!-- 
+        justify-content: center        - justify-center
+        justify-content: space-between - justify-between
+        align-items: flex-start        - items-start
+        align-items: center            - items-center
+        align-self: auto               - self-auto
+        align-slef: flex-start         - self-start
+        align-slef: flex-end           - self-end
+        flex: 1 1 0%                   - flex-1
+        flex: 1 1 auto                 - flex-auto
+        flex: 0 1 auto                 - flex-initial
+        flex: none                     - flex-none
+-->
+
+    <br>
+    <h2>6</h2>
+    <div class="flex flex-wrap border-4 border-red-300">
+        <div class="flex-1 p-2 border-2 border-blue-200">hello</div>
+        <div class="flex-1 p-2 border-2 border-blue-200">hello</div>
+        <div class="flex-1 p-2 border-2 border-blue-200">hello</div>
+        <div class="flex-1 p-2 border-2 border-blue-200">hello</div>
+    </div>
+</body>
+</html>
+
+
+<!-- 일괄수정 command shift l -->
+<!-- https://flexngrid.com/cheatsheet-flex/ -->
