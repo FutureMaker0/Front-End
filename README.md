@@ -9,3 +9,5 @@
 # 접근성
 
 # svg
+
+# for the pull_shark badge
